@@ -1,0 +1,18 @@
+Runes - Norse Mythology for Smart People
+This page is the first part of a five-part article on the runes. The other four parts are:
+Part II: The Origins of the Runes Part III: Runic Philosophy and Magic Part IV: The Meanings of the Runes Part V: The 10 Best Books on the Runes
+The first systems of writing developed and used by the Norse and other Germanic peoples were runic alphabets. The runes functioned as letters, but they were much more than just letters in the sense in which we today understand the term. Each rune was an ideographic or pictographic symbol of some cosmological principle or power, and to write a rune was to invoke and direct the force for which it stood. Indeed, in every Germanic language, the word “rune” (from Proto-Germanic *runo ) means both “letter” and “secret” or “mystery,” and its original meaning, which likely predated the adoption of the runic alphabet, may have been simply “(hushed) message.” [1]
+Each rune had a name that hinted at the philosophical and magical significance of its visual form and the sound for which it stands, which was almost always the first sound of the rune’s name. For example, the T-rune, called *Tiwaz in the Proto-Germanic language, is named after the god Tiwaz (known as Tyr in the Viking Age). Tiwaz was perceived to dwell within the daytime sky, and, accordingly, the visual form of the T-rune is an arrow pointed upward (which surely also hints at the god’s prominent role in war). The T-rune was often carved as a standalone ideograph, apart from the writing of any particular word, as part of spells cast to ensure victory in battle. [2] [3] (See Part IV for more examples.)
+
+The runic alphabets are called “futharks” after the first six runes (Fehu, Uruz, Thurisaz, Ansuz, Raidho, Kaunan), in much the same way that the word “alphabet” comes from the names of the first two Semitic letters (Aleph, Beth). There are three principal futharks: the 24-character Elder Futhark, the first fully-formed runic alphabet, whose development had begun by the first century CE and had been completed before the year 400; [4] the 16-character Younger Futhark, which began to diverge from the Elder Futhark around the beginning of the Viking Age (c. 750 CE) [5] and eventually replaced that older alphabet in Scandinavia; and the 33-character Anglo-Saxon Futhorc, which gradually altered and added to the Elder Futhark in England. On some inscriptions, the twenty-four runes of the Elder Futhark were divided into three ættir (Old Norse, “families”) of eight runes each, [6] but the significance of this division is unfortunately unknown.
+Runes were traditionally carved onto stone, wood, bone, metal, or some similarly hard surface rather than drawn with ink and pen on parchment. This explains their sharp, angular form, which was well-suited to the medium.
+Much of our current knowledge of the meanings the ancient Germanic peoples attributed to the runes comes from the three “Rune Poems,” documents from Iceland, Norway, and England that provide a short stanza about each rune in their respective futharks (the Younger Futhark is treated in the Icelandic and Norwegian Rune Poems, while the Anglo-Saxon Futhorc is discussed in the Old English Rune Poem).
+Continue on to Part II, The Origins of the Runes .
+References:
+[1] MacLeod, Mindy, and Bernard Mees. 2006. Runic Amulets and Magic Objects. p. 4-5.
+[2] The Poetic Edda. Sigrdrífumál, stanza 6.
+[3] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 268.
+[4] Ibid. See also references in “The Origins of the Runes” section.
+[5] Ibid.
+[6] Looijenga, Tineke. 2003. Texts & Contexts of the Oldest Runic Inscriptions. p. 206, 221.
+

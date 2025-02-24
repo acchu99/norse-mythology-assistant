@@ -1,0 +1,17 @@
+Skoll and Hati - Norse Mythology for Smart People
+Skoll (pronounced roughly “SKOHL”; Old Norse Sköll , “One Who Mocks”) and Hati (pronounced “HAHT-ee”; Old Norse Hati , “One Who Hates”) are two wolves who are only mentioned in passing references that have to do with their pursuing Sol and Mani , the sun and moon, through the sky in hopes of devouring them. At Ragnarok , the downfall of the cosmos, they catch their prey as the sky and earth darken and collapse.
+It’s not entirely clear which one of them pursues the sun and which pursues the moon. The medieval Icelandic historian Snorri Sturluson , whose works are typically taken at face value in low-quality introductory books on Norse mythology, claims that Skoll chases the sun and Hati the moon. [1] However, Snorri’s source in this passage, the Eddic poem Grímnismál , says the following in the relevant stanza:
+Skoll is the name of the wolf Who follows the shining priest Into the desolate forest, And the other is Hati, Hróðvitnir’s son, Who chases the bright bride of the sky. [2]
+The noun used for Skoll’s prey, goði (“priest”), is masculine, and the noun used for Hati’s prey, brúðr (“bride”) is feminine. Since Mani (the moon) is male, and Sol (the sun) is female, the wording of this stanza strongly suggests that Skoll hunts the moon and Hati the sun.
+This same stanza names the father of Hati (and surely, by extension, Skoll as well) as Hróðvitnir . Since another poem in the Poetic Edda , the Lokasenna , uses the essentially identical word Hróðrsvitnir (“Famous Wolf” [3] ) as a byname for Fenrir , [4] , the arch-wolf, it would seem that Fenrir is their father. This interpretation finds additional support in another Eddic poem, the Völuspá , which states that the children of Fenrir swallow the sun during Ragnarok. [5]
+Ultimately, however, proposing a definitive genealogical relationship between Fenrir, Skoll, and Hati is futile. The sources themselves give contradictory interpretations, which reflects the lack of systematization or codification in the Norse religion back when it was a living tradition. As with so many other aspects of Norse mythology and religion, any single, tidy interpretation we might try to foist upon the material today in the interest of resolving its many contradictions is a modern, artificial imposition.
+Looking for more great information on Norse mythology and religion? While this site provides the ultimate online introduction to the topic, my book The Viking Spirit provides the ultimate introduction to Norse mythology and religion period . I’ve also written a popular list of The 10 Best Norse Mythology Books , which you’ll probably find helpful in your pursuit.
+
+References:
+[1] Snorri Sturluson. The Prose Edda. Gylfaginning, chapter 11.
+[2] The Poetic Edda. Grímnismál, stanza 39. My translation. The original Old Norse stanza reads:
+Sköll heitir ulfr, er fylgir inu skírleita goði til varna viðar, en annarr Hati, hann er Hróðvitnis sonr, sá skal fyr heiða brúði himins.
+[3] Simek, Rudolf. 1993. Dictionary of Northern Mythology. Translated by Angela Hall. p. 160.
+[4] The Poetic Edda. Lokasenna, stanza 39.
+[5] The Poetic Edda. Völuspá, stanza 40.
+

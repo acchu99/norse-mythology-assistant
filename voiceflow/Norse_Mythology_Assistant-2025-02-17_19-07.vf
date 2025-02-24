@@ -1,0 +1,2974 @@
+{
+  "version": {
+    "_version": 13,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [
+      {
+        "id": "sg9zy34i0",
+        "name": "Basic Conversation Path",
+        "color": "#5b9fd7",
+        "nodeIDs": [
+          "643872d482cf9d2273b905df",
+          "643872d482cf9d2273b905e1",
+          "643872d482cf9d2273b905e3"
+        ]
+      },
+      {
+        "id": "5bgq3341p",
+        "name": "Save Information",
+        "color": "#000000",
+        "nodeIDs": [
+          "6438784f82cf9d2273b90dd4",
+          "6438784f82cf9d2273b90dd6",
+          "6438784f82cf9d2273b90dd8",
+          "6438784f82cf9d2273b90dda"
+        ]
+      },
+      {
+        "id": "byav33785",
+        "name": "API Call Example",
+        "color": null,
+        "nodeIDs": [
+          "645d718f83103cca7a3cecc1",
+          "645d718f83103cca7a3cecc3",
+          "645d718f83103cca7a3cecc5",
+          "645d718f83103cca7a3cecc7"
+        ]
+      }
+    ],
+    "components": [],
+    "creatorID": 957567,
+    "manualSave": false,
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "VF.YES",
+          "name": "VF.YES",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "VF.NO",
+          "name": "VF.NO",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ]
+      },
+      "publishing": {
+        "avatar": "https://cm4-production-assets.s3.amazonaws.com/1720039967725-copricer_logo.png",
+        "color": "#4CD3FD",
+        "description": "I can help you with any queries regarding self-storage prices",
+        "feedback": false,
+        "image": "https://cm4-production-assets.s3.amazonaws.com/1720039962728-copricer_logo.png",
+        "persistence": "memory",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "CoPricer.ai Assistant",
+        "watermark": false,
+        "launcher": "https://cm4-production-assets.s3.amazonaws.com/1720040103519-logo_copricer.png"
+      },
+      "platform": "webchat"
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "custom-gpts-to-website-template",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "nonDraftResponsesMap": {},
+        "responseMessagesByDiscriminatorIDMap": {},
+        "responseDiscriminatorsByResponseIDMap": {},
+        "functionDefinitions": {},
+        "referencedResponseIDs": [
+          "67b3a78513e99b000787e33e",
+          "67b3a78513e99b000787e341",
+          "67b3a78513e99b000787e344",
+          "67b3a78513e99b000787e347",
+          "67b3a78513e99b000787e34a",
+          "67b3a78513e99b000787e34d",
+          "67b3a78513e99b000787e350",
+          "67b3a78513e99b000787e353",
+          "67b3a78513e99b000787e356",
+          "67b3a78513e99b000787e359",
+          "67b3a78513e99b000787e35c",
+          "67b3a78513e99b000787e35f",
+          "67b3a78513e99b000787e362",
+          "67b3a78513e99b000787e365"
+        ],
+        "slotsMap": {},
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "projectType": "chat",
+        "extraIntents": [],
+        "usedEventsSet": [],
+        "usedIntentsSet": [],
+        "goToIntentsSet": [],
+        "entitiesMap": {},
+        "variableMap": {},
+        "intentsMap": {},
+        "requiredEntitiesMap": {},
+        "eventsMap": {},
+        "cmsVariables": {
+          "sessions": {
+            "isSystem": true,
+            "description": "The number of times a particular user has opened the app.",
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "description": "The user's unique ID.",
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+            "defaultValue": null
+          },
+          "threadID": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": null,
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "description": "The agent's last response (text/speak) in a string.",
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "description": "The object containing the last event that the user client has triggered.",
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "description": "The user's last utterance in a text string.",
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+            "defaultValue": null
+          }
+        },
+        "cmsEntities": {}
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "settings": {
+      "widget": {
+        "type": "chat",
+        "chat": {
+          "voiceInput": true,
+          "voiceOutput": true,
+          "renderMode": "popover",
+          "headerImage": {
+            "enabled": true,
+            "url": "https://cm4-production-assets.s3.amazonaws.com/1739827861047-viking.jpg"
+          },
+          "agentImage": {
+            "enabled": true,
+            "url": "https://cm4-production-assets.s3.amazonaws.com/1739827843396-viking.jpg"
+          },
+          "banner": {
+            "title": "Norse Mythology Assistant",
+            "description": "I am your Norse mythology guide, here to unveil the tales of Odin, Thor, and Loki, decode ancient runes, and bring Viking legends to life!",
+            "enabled": true,
+            "imageURL": "https://cm4-production-assets.s3.amazonaws.com/1739827866786-viking.jpg"
+          },
+          "placeholderText": "Message...",
+          "aiDisclaimer": {
+            "text": "Generated by AI, double-check for accuracy.",
+            "enabled": true
+          },
+          "handoffToAgentImageURL": ""
+        },
+        "voice": {
+          "renderMode": "full",
+          "content": {
+            "talkingText": "Talk to interrupt",
+            "endButtonText": "End",
+            "listeningText": "Listening...",
+            "startButtonText": "Start a call",
+            "callToActionText": "How can I help you?"
+          }
+        },
+        "common": {
+          "sideSpacing": "24",
+          "bottomSpacing": "24",
+          "position": "right",
+          "fontFamily": "UCity Pro",
+          "primaryColor": {
+            "color": "#D4A017",
+            "palette": {
+              "50": "#FDF7E8",
+              "100": "#FAEFD1",
+              "200": "#F5DEA3",
+              "300": "#F0CE75",
+              "400": "#EBBE47",
+              "500": "#E6AE19",
+              "600": "#B88B14",
+              "700": "#8A680F",
+              "800": "#5C450A",
+              "900": "#2E2305"
+            }
+          },
+          "poweredBy": false,
+          "launcher": {
+            "type": "label",
+            "text": "Norse Mythology Assistant",
+            "imageURL": "https://cm4-production-assets.s3.amazonaws.com/1739828078253-viking.jpg"
+          },
+          "footerLink": {
+            "enabled": true
+          },
+          "persistence": "memory"
+        }
+      },
+      "intentClassification": {
+        "type": "nlu",
+        "params": {
+          "confidence": 0.6
+        }
+      }
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64dbb6696a8fab0013dba194"
+      }
+    ],
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "threadID",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory"
+    ],
+    "programResources": {
+      "messages": {
+        "67b3a78513e99b000787e33e": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Second Option"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e341": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "How can I help you?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e344": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "First Option"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e347": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "What is your name?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e34a": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Hello "
+                        },
+                        {
+                          "text": "{name}"
+                        },
+                        {
+                          "text": " !"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e34d": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Twitter is the best 🐦"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e350": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Error"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e353": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "This flow captures a users question and sends it to the OpenAI API"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e356": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "text": "{response}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e359": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Hi! I'm Norse Mythology Assistant!"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e35c": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "How can I help you today?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e35f": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "text": "{last_response}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e362": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Failed to create new thread!"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "67b3a78513e99b000787e365": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Failed to create generate response!"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        }
+      },
+      "prompts": {}
+    },
+    "_id": "67b3a8c8a6560cc8134601e7",
+    "updatedAt": "2025-02-17T21:42:17.990Z",
+    "publishedAt": "2024-07-03T20:45:02.435Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64dbb6696a8fab0013dba194"
+        ],
+        "rootDiagramID": "64dbb6696a8fab0013dba194",
+        "updatedBy": 957567,
+        "updatedAt": "2025-02-17T21:23:20.563Z"
+      }
+    ],
+    "projectID": "67b3a8c8a6560cc8134601e6",
+    "rootDiagramID": "64dbb6696a8fab0013dba194",
+    "templateDiagramID": "64dbb6696a8fab0013dba195"
+  },
+  "diagrams": {
+    "64dbb6696a8fab0013dba195": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {
+        "643872d482cf9d2273b905df": {
+          "type": "block",
+          "data": {
+            "name": "Option 2",
+            "color": "",
+            "steps": [
+              "643872d482cf9d2273b905e5"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905df",
+          "coords": [
+            -432.02299332274276,
+            -334.73425308247994
+          ]
+        },
+        "643872d482cf9d2273b905e5": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e33e",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905e6"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "643872d482cf9d2273b905e5"
+        },
+        "643872d482cf9d2273b905e1": {
+          "type": "block",
+          "data": {
+            "name": "Start Block",
+            "color": "#5b9fd7",
+            "steps": [
+              "643872d482cf9d2273b905e8",
+              "643872d482cf9d2273b905eb"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905e1",
+          "coords": [
+            -845.4801744371416,
+            -539.5792694267975
+          ]
+        },
+        "643872d482cf9d2273b905e8": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e341",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "643872d482cf9d2273b905eb",
+                  "id": "643872d482cf9d2273b905e9"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "643872d482cf9d2273b905e8"
+        },
+        "643872d482cf9d2273b905eb": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "noMatch": null,
+            "buttons": [
+              {
+                "id": "xr9vd34tj",
+                "name": "Path 1",
+                "actions": []
+              },
+              {
+                "id": "cl9vs34c7",
+                "name": "Path 2",
+                "actions": []
+              }
+            ],
+            "noReply": null,
+            "intentScope": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905ec"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "643872d482cf9d2273b905e3",
+                  "id": "643872d482cf9d2273b905ed",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -679.4801667002234,
+                          -399.32923837159325
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -637.4918741411055,
+                          -399.32923837159325
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -637.4918741411055,
+                          -542.9755028741506
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -595.5035815819875,
+                          -542.9755028741506
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "",
+                  "target": "643872d482cf9d2273b905df",
+                  "id": "643872d482cf9d2273b905ee",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -679.4801667002234,
+                          -344.82921901334083
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -638.2515780028617,
+                          -344.82921901334083
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -638.2515780028617,
+                          -307.73401942975823
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -597.0229893055001,
+                          -307.73401942975823
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "643872d482cf9d2273b905eb"
+        },
+        "643872d482cf9d2273b905e3": {
+          "type": "block",
+          "data": {
+            "name": "Option 1",
+            "color": "",
+            "steps": [
+              "643872d482cf9d2273b905f0"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905e3",
+          "coords": [
+            -430.5038187460724,
+            -569.9756266907931
+          ]
+        },
+        "643872d482cf9d2273b905f0": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e344",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905f1"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "643872d482cf9d2273b905f0"
+        },
+        "6438784f82cf9d2273b90dd4": {
+          "type": "block",
+          "data": {
+            "name": "Use Logic to Route",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90ddc"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd4",
+          "coords": [
+            -1964.4846386537488,
+            -626.9744457114995
+          ]
+        },
+        "6438784f82cf9d2273b90ddc": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "If name is elon musk",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "name"
+                      },
+                      {
+                        "type": "value",
+                        "value": "elon musk"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "path",
+              "pathName": "All other names"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "6438784f82cf9d2273b90dd8",
+                  "id": "6438784f82cf9d2273b90ddd",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1798.484505972181,
+                          -492.72447921623757
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1763.5243607307511,
+                          -492.72447921623757
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1763.5243607307511,
+                          -440.2937029472216
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1728.5642154893217,
+                          -440.2937029472216
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "6438784f82cf9d2273b90dda",
+                  "id": "6438784f82cf9d2273b90dde",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1798.484505972181,
+                          -547.2244999131336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1764.1493300508728,
+                          -547.2244999131336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1764.1493300508728,
+                          -599.0438504799286
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1729.814154129565,
+                          -599.0438504799286
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "event": {
+                      "type": "If name is elon musk"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90ddc"
+        },
+        "6438784f82cf9d2273b90dd6": {
+          "type": "block",
+          "data": {
+            "name": "Capture Information",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90de0",
+              "6438784f82cf9d2273b90de3"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd6",
+          "coords": [
+            -2376.095116200327,
+            -628.3840706346044
+          ]
+        },
+        "6438784f82cf9d2273b90de0": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e347",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "6438784f82cf9d2273b90de3",
+                  "id": "6438784f82cf9d2273b90de1"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "6438784f82cf9d2273b90de0"
+        },
+        "6438784f82cf9d2273b90de3": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "name"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6438784f82cf9d2273b90dd4",
+                  "id": "6438784f82cf9d2273b90de4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -2210.0950799471193,
+                          -488.1341077200336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2169.789872823509,
+                          -488.1341077200336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2169.789872823509,
+                          -599.9743336839742
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2129.484665699899,
+                          -599.9743336839742
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90de5"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90de3"
+        },
+        "6438784f82cf9d2273b90dd8": {
+          "type": "block",
+          "data": {
+            "name": "Other names",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90de7"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd8",
+          "coords": [
+            -1563.5642881833433,
+            -467.2936955577087
+          ]
+        },
+        "6438784f82cf9d2273b90de7": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e34a",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90de8"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "6438784f82cf9d2273b90de7"
+        },
+        "6438784f82cf9d2273b90dda": {
+          "type": "block",
+          "data": {
+            "name": "Elon Musk",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90dea"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dda",
+          "coords": [
+            -1564.8142881833433,
+            -626.0436955577089
+          ]
+        },
+        "6438784f82cf9d2273b90dea": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e34d",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90deb"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "6438784f82cf9d2273b90dea"
+        },
+        "645d718f83103cca7a3cecc1": {
+          "type": "block",
+          "data": {
+            "name": "Fail",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecc9"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc1",
+          "coords": [
+            -943.7641060825457,
+            -726.7018427371622
+          ]
+        },
+        "645d718f83103cca7a3cecc9": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e350",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecca"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "645d718f83103cca7a3cecc9"
+        },
+        "645d718f83103cca7a3cecc3": {
+          "type": "block",
+          "data": {
+            "name": "API Call",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3ceccc"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc3",
+          "coords": [
+            -1337.282813902139,
+            -902.1537022731807
+          ]
+        },
+        "645d718f83103cca7a3ceccc": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://api.openai.com/v1/completions",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [],
+            "method": "POST",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "val": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "val": "Bearer <ADD API KEY HERE>"
+              }
+            ],
+            "content": "{\n  \"model\": \"text-davinci-003\",\n  \"prompt\": \"{last_utterance}\",\n  \"max_tokens\": 7,\n  \"temperature\": 0,\n  \"top_p\": 1,\n  \"n\": 1,\n  \"stream\": false,\n  \"logprobs\": null,\n  \"stop\": \"\\n\"\n}",
+            "mappings": [
+              {
+                "path": "response",
+                "var": "response"
+              }
+            ],
+            "bodyType": "rawInput",
+            "selectedAction": "Make a POST Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecd7",
+                  "id": "645d718f83103cca7a3cecce",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1171.2838307947716,
+                          -748.4052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1141.0638307947715,
+                          -748.4052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1141.0638307947715,
+                          -821.3652156062917
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1110.8438307947717,
+                          -821.3652156062917
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "645d718f83103cca7a3cecc9",
+                  "id": "645d718f83103cca7a3ceccd",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1171.2838307947716,
+                          -693.9052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1140.5238307947716,
+                          -693.9052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1140.5238307947716,
+                          -647.2052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1109.7638307947714,
+                          -647.2052156062919
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3ceccc"
+        },
+        "645d718f83103cca7a3cecc5": {
+          "type": "block",
+          "data": {
+            "name": "Welcome",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecd0",
+              "645d718f83103cca7a3cecd3"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc5",
+          "coords": [
+            -1722.1832079861151,
+            -907.6478276212674
+          ]
+        },
+        "645d718f83103cca7a3cecd0": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e353",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecd3",
+                  "id": "645d718f83103cca7a3cecd1"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "645d718f83103cca7a3cecd0"
+        },
+        "645d718f83103cca7a3cecd3": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecc3",
+                  "id": "645d718f83103cca7a3cecd4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1556.1838307947714,
+                          -733.6452156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1529.2338307947716,
+                          -733.6452156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1529.2338307947716,
+                          -875.1552156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1502.2838307947716,
+                          -875.1552156062919
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecd5"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3cecd3"
+        },
+        "645d718f83103cca7a3cecc7": {
+          "type": "block",
+          "data": {
+            "name": "Success",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecd7"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc7",
+          "coords": [
+            -944.844860096504,
+            -900.8660415973322
+          ]
+        },
+        "645d718f83103cca7a3cecd7": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e356",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecd8"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "645d718f83103cca7a3cecd7"
+        }
+      },
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1699702034,
+      "creatorID": 957567,
+      "variables": [],
+      "menuItems": [],
+      "_id": "67b3a8c8a6560cc8134601e9",
+      "diagramID": "64dbb6696a8fab0013dba195",
+      "versionID": "67b3a8c8a6560cc8134601e7"
+    },
+    "64dbb6696a8fab0013dba194": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "654f652e1b52b67850908433",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -60.84,
+                          -704.69
+                        ]
+                      },
+                      {
+                        "point": [
+                          -19.52,
+                          -704.69
+                        ]
+                      },
+                      {
+                        "point": [
+                          -19.52,
+                          -852.56
+                        ]
+                      },
+                      {
+                        "point": [
+                          21.79,
+                          -852.56
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            -125.47306657576806,
+            -726.6861503347151
+          ]
+        },
+        "654f652e1b52b67850908433": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://907b8268-2ec2-45b1-b593-cd8d7c4dd4c3-00-3sgqycitwj00j.riker.replit.dev:3000/start",
+            "body": [],
+            "params": [],
+            "method": "GET",
+            "headers": [],
+            "content": "",
+            "mappings": [
+              {
+                "path": "response.thread_id",
+                "var": "threadID"
+              }
+            ],
+            "bodyType": "formData",
+            "selectedAction": "Make a GET Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "654f662a1b52b6785090843e",
+                  "id": "654f652e1b52b67850908434",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          353.97,
+                          -782.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          387.1,
+                          -782.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          387.1,
+                          -856.4
+                        ]
+                      },
+                      {
+                        "point": [
+                          420.22,
+                          -856.4
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "654f69041b52b6785090846a",
+                  "id": "654f652e1b52b67850908435",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          353.97,
+                          -727.84
+                        ]
+                      },
+                      {
+                        "point": [
+                          378.49,
+                          -727.84
+                        ]
+                      },
+                      {
+                        "point": [
+                          378.49,
+                          -569.09
+                        ]
+                      },
+                      {
+                        "point": [
+                          354.49,
+                          -569.09
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "654f652e1b52b67850908433"
+        },
+        "654f652e1b52b67850908436": {
+          "type": "block",
+          "data": {
+            "name": "Create Thread",
+            "steps": [
+              "654f652e1b52b67850908433"
+            ],
+            "color": "#5b9fd7"
+          },
+          "nodeID": "654f652e1b52b67850908436",
+          "coords": [
+            187.78886353485115,
+            -931.558015058844
+          ]
+        },
+        "654f662a1b52b6785090843e": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e359",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "654f662a1b52b6785090843f"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "654f662a1b52b6785090843e"
+        },
+        "654f662a1b52b67850908440": {
+          "type": "block",
+          "data": {
+            "name": "Capture User Input",
+            "steps": [
+              "654f662a1b52b6785090843e",
+              "654f666e1b52b67850908447",
+              "654f66801b52b6785090844c"
+            ],
+            "color": ""
+          },
+          "nodeID": "654f662a1b52b67850908440",
+          "coords": [
+            586.4064780532453,
+            -935.2159541764237
+          ]
+        },
+        "654f666e1b52b67850908447": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e35c",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "654f666e1b52b67850908448"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "654f666e1b52b67850908447"
+        },
+        "654f66801b52b6785090844c": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "654f668e1b52b67850908452",
+                  "id": "654f66801b52b6785090844d",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          752.59,
+                          -703.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          780.16,
+                          -703.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          780.16,
+                          -858.99
+                        ]
+                      },
+                      {
+                        "point": [
+                          807.72,
+                          -858.99
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "654f66801b52b6785090844e"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "654f66801b52b6785090844c",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "654f668e1b52b67850908452": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://907b8268-2ec2-45b1-b593-cd8d7c4dd4c3-00-3sgqycitwj00j.riker.replit.dev:3000/chat",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [],
+            "method": "POST",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "val": "application/json"
+              }
+            ],
+            "content": "{\n  \"thread_id\": \"{threadID}\",\n  \"message\": \"{last_utterance}\"\n}",
+            "mappings": [
+              {
+                "path": "response.response",
+                "var": "last_response"
+              }
+            ],
+            "bodyType": "rawInput",
+            "selectedAction": "Make a POST Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "654f74b1212540e07f560c17",
+                  "id": "654f668e1b52b67850908453",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1140.09,
+                          -788.59
+                        ]
+                      },
+                      {
+                        "point": [
+                          1167.46,
+                          -788.59
+                        ]
+                      },
+                      {
+                        "point": [
+                          1167.46,
+                          -583.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          1143.46,
+                          -583.03
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "654f697f1b52b67850908475",
+                  "id": "654f668e1b52b67850908454",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1140.09,
+                          -734.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1173.08,
+                          -734.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1173.08,
+                          -907.7
+                        ]
+                      },
+                      {
+                        "point": [
+                          1206.06,
+                          -907.7
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "654f668e1b52b67850908452"
+        },
+        "654f668e1b52b67850908455": {
+          "type": "block",
+          "data": {
+            "name": "Generate Response",
+            "steps": [
+              "654f668e1b52b67850908452"
+            ],
+            "color": "#5b9fd7"
+          },
+          "nodeID": "654f668e1b52b67850908455",
+          "coords": [
+            973.904773786534,
+            -937.810932698057
+          ]
+        },
+        "654f677f1b52b6785090845d": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e35f",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "654f66801b52b6785090844c",
+                  "id": "654f677f1b52b6785090845e",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          811.1,
+                          -522.55
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          781.84,
+                          -522.55
+                        ]
+                      },
+                      {
+                        "point": [
+                          781.84,
+                          -713.88
+                        ]
+                      },
+                      {
+                        "point": [
+                          752.59,
+                          -713.88
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "654f677f1b52b6785090845d"
+        },
+        "654f677f1b52b6785090845f": {
+          "type": "block",
+          "data": {
+            "name": "Send Response",
+            "steps": [
+              "654f74b1212540e07f560c17",
+              "654f677f1b52b6785090845d"
+            ],
+            "color": "#56b365"
+          },
+          "nodeID": "654f677f1b52b6785090845f",
+          "coords": [
+            977.2798613672251,
+            -661.8438511093013
+          ]
+        },
+        "654f69041b52b6785090846a": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e362",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "654f69e01b52b67850908486",
+                  "id": "654f69041b52b6785090846b",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "654f69041b52b6785090846a"
+        },
+        "654f69041b52b6785090846c": {
+          "type": "block",
+          "data": {
+            "name": "API Request Failed",
+            "steps": [
+              "654f69041b52b6785090846a"
+            ],
+            "color": "#CB627B"
+          },
+          "nodeID": "654f69041b52b6785090846c",
+          "coords": [
+            188.30361928652914,
+            -647.9042670812945
+          ]
+        },
+        "654f697f1b52b67850908475": {
+          "type": "block",
+          "data": {
+            "name": "API Request Failed",
+            "color": "#CB627B",
+            "steps": [
+              "654f697f1b52b67850908477"
+            ]
+          },
+          "nodeID": "654f697f1b52b67850908475",
+          "coords": [
+            1371.064564821943,
+            -934.7001151692151
+          ]
+        },
+        "654f697f1b52b67850908477": {
+          "type": "message",
+          "data": {
+            "messageID": "67b3a78513e99b000787e365",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "654f69db1b52b67850908480",
+                  "id": "654f697f1b52b67850908478",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "654f697f1b52b67850908477"
+        },
+        "654f69db1b52b6785090847f": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "654f69db1b52b6785090847f"
+        },
+        "654f69db1b52b67850908480": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "654f69db1b52b6785090847f"
+            ]
+          },
+          "nodeID": "654f69db1b52b67850908480",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "654f69e01b52b67850908485": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "654f69e01b52b67850908485"
+        },
+        "654f69e01b52b67850908486": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "654f69e01b52b67850908485"
+            ]
+          },
+          "nodeID": "654f69e01b52b67850908486",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "654f74b1212540e07f560c17": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "Remove Citations",
+            "sets": [
+              {
+                "mode": "prompt",
+                "prompt": "You are an AI assistant response formatter and cleaner. You receive responses from an text generation API that contains some citations.\n\nYou need to identify and remove these citations and output the exact content with appealing formatting for the end user to read within a chat interface on our website.\n\nInputs will look like this:\n\nOur company mission at Smith's Solar is \"To provide affordable, reliable, and efficient solar energy systems that contribute to a cleaner and more sustainable environment\"【7†source】\n\nNote the \"【7†source】\". You need to remove these kinds of citations whever they appear, and otherwise output the exact content.\n\nClean and format this:\n\n{{[last_response].last_response}}\n\nOnly output the edited version. Do not say things like \"here is the cleaned response\". \n\nIf there are no citations then just output the exact same message as above but with improved formatting for the chat interface it will be read within.",
+                "variable": "last_response"
+              }
+            ],
+            "system": "",
+            "maxTokens": 976,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "654f74b1212540e07f560c18"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "654f74b1212540e07f560c17"
+        },
+        "654ffc843dd2035378bf29bb": {
+          "type": "markup_text",
+          "data": {
+            "name": "Block",
+            "scale": 1.34520623961631,
+            "rotate": 0,
+            "content": [
+              {
+                "textAlign": "center",
+                "children": [
+                  {
+                    "text": "Norse Mythology Assistant Workflow",
+                    "fontWeight": "700"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 421.99981059460487,
+            "backgroundColor": {
+              "r": 197,
+              "g": 231,
+              "b": 246,
+              "a": 1
+            }
+          },
+          "nodeID": "654ffc843dd2035378bf29bb",
+          "coords": [
+            505.23729013316176,
+            -1126.9719182086958
+          ]
+        }
+      },
+      "offsetX": 660.3784532606145,
+      "offsetY": 881.3489202677721,
+      "modified": 1699702034,
+      "creatorID": 957567,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "67b3a8c8a6560cc8134601ea",
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "versionID": "67b3a8c8a6560cc8134601e7"
+    }
+  },
+  "flows": [],
+  "entities": [],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "VF.YES",
+      "name": "VF.YES",
+      "createdByID": 957567,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "VF.NO",
+      "name": "VF.NO",
+      "createdByID": 957567,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 957567,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    }
+  ],
+  "utterances": [],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [
+    {
+      "id": "67b3a78513e99b000787e33e",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e341",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e344",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e347",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e34a",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e34d",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e350",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e353",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e356",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e359",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e35c",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e35f",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e362",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "67b3a78513e99b000787e365",
+      "name": "",
+      "createdByID": 957567,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "67b3a78513e99b000787e340",
+      "discriminatorID": "67b3a78513e99b000787e33f",
+      "text": [
+        {
+          "text": [
+            "Second Option"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e343",
+      "discriminatorID": "67b3a78513e99b000787e342",
+      "text": [
+        {
+          "text": [
+            "How can I help you?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e346",
+      "discriminatorID": "67b3a78513e99b000787e345",
+      "text": [
+        {
+          "text": [
+            "First Option"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e349",
+      "discriminatorID": "67b3a78513e99b000787e348",
+      "text": [
+        {
+          "text": [
+            "What is your name?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e34c",
+      "discriminatorID": "67b3a78513e99b000787e34b",
+      "text": [
+        {
+          "text": [
+            "Hello ",
+            {
+              "variableID": "name"
+            },
+            " !"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e34f",
+      "discriminatorID": "67b3a78513e99b000787e34e",
+      "text": [
+        {
+          "text": [
+            "Twitter is the best 🐦"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e352",
+      "discriminatorID": "67b3a78513e99b000787e351",
+      "text": [
+        {
+          "text": [
+            "Error"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e355",
+      "discriminatorID": "67b3a78513e99b000787e354",
+      "text": [
+        {
+          "text": [
+            "This flow captures a users question and sends it to the OpenAI API"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e358",
+      "discriminatorID": "67b3a78513e99b000787e357",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "response"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e35b",
+      "discriminatorID": "67b3a78513e99b000787e35a",
+      "text": [
+        {
+          "text": [
+            "Hi! I'm Norse Mythology Assistant!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e35e",
+      "discriminatorID": "67b3a78513e99b000787e35d",
+      "text": [
+        {
+          "text": [
+            "How can I help you today?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e361",
+      "discriminatorID": "67b3a78513e99b000787e360",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "last_response"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e364",
+      "discriminatorID": "67b3a78513e99b000787e363",
+      "text": [
+        {
+          "text": [
+            "Failed to create new thread!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e367",
+      "discriminatorID": "67b3a78513e99b000787e366",
+      "text": [
+        {
+          "text": [
+            "Failed to create generate response!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "67b3a78513e99b000787e33f",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e33e",
+      "variantOrder": [
+        "67b3a78513e99b000787e340"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e342",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e341",
+      "variantOrder": [
+        "67b3a78513e99b000787e343"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e345",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e344",
+      "variantOrder": [
+        "67b3a78513e99b000787e346"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e348",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e347",
+      "variantOrder": [
+        "67b3a78513e99b000787e349"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e34b",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e34a",
+      "variantOrder": [
+        "67b3a78513e99b000787e34c"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e34e",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e34d",
+      "variantOrder": [
+        "67b3a78513e99b000787e34f"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e351",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e350",
+      "variantOrder": [
+        "67b3a78513e99b000787e352"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e354",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e353",
+      "variantOrder": [
+        "67b3a78513e99b000787e355"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e357",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e356",
+      "variantOrder": [
+        "67b3a78513e99b000787e358"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e35a",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e359",
+      "variantOrder": [
+        "67b3a78513e99b000787e35b"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e35d",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e35c",
+      "variantOrder": [
+        "67b3a78513e99b000787e35e"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e360",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e35f",
+      "variantOrder": [
+        "67b3a78513e99b000787e361"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e363",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e362",
+      "variantOrder": [
+        "67b3a78513e99b000787e364"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    },
+    {
+      "id": "67b3a78513e99b000787e366",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "67b3a78513e99b000787e365",
+      "variantOrder": [
+        "67b3a78513e99b000787e367"
+      ],
+      "createdAt": "2025-02-17T21:23:21.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 957567,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 957567,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 957567,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 957567,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 957567,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "threadID",
+      "name": "threadID",
+      "createdByID": 957567,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": null,
+      "defaultValue": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 957567,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 957567,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 957567,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 957567,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 957567,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-17T21:23:21.000Z",
+      "updatedByID": 957567
+    }
+  ],
+  "workflows": [
+    {
+      "id": "664cb18800b83f0007f1f37b",
+      "name": "Workflow",
+      "createdByID": 957567,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "assigneeID": null,
+      "description": null,
+      "createdAt": "2025-02-17T21:23:21.000Z",
+      "updatedAt": "2025-02-18T02:05:19.000Z",
+      "updatedByID": 957567
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "prompts": [],
+  "promptMessages": [],
+  "events": [],
+  "functions": [],
+  "functionPaths": [],
+  "functionVariables": [],
+  "project": {
+    "type": "chat",
+    "name": "Norse Mythology Assistant",
+    "image": "",
+    "teamID": "Zwnbp3NLk2",
+    "members": [],
+    "privacy": "private",
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 957567,
+    "updatedBy": 957567,
+    "apiPrivacy": "public",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "_id": "67b3a8c8a6560cc8134601e6",
+    "updatedAt": "2025-02-18T02:05:10.883Z",
+    "devVersion": "67b3a8c8a6560cc8134601e7",
+    "liveVersion": "67b3a8c8a6560cc8134601e8"
+  },
+  "_version": "1.2",
+  "secrets": [],
+  "variableStates": []
+}
