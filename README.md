@@ -52,6 +52,7 @@ This will crawl the website and save content in the ```crawled_pages``` subdirec
 * Upload the ```crawled_pages``` folder to Google Drive.
 * Create an account on Ragie.ai.
 * Link the ```crawled_pages``` folder from Google Drive to your Ragie account.
+* Make sure to save a copy your Ragie API key as it will be required when you need to run the application.
 ##### Configure Voiceflow for Chatbot UI
 * Create a free account on [Voiceflow](https://www.voiceflow.com/).
 * Upload the ```.vf``` file from the ```voiceflow``` directory.
@@ -73,6 +74,7 @@ export APP_SECRET="<Some long random unpredictable string which is used to sign 
 export OPENAI_API_KEY="<Your OpenAI API key>"
 export MAIN_ASSISTANT="<ID of the main assistant>"
 export EVALUATOR_ASSISTANT="<ID of the evaluator assistant>"
+export RAGIE_API_KEY="<Your Ragie API key>"
 ```
 For Replit, add these secrets in the Secrets Manager.
 ##### Start the Chatbot
