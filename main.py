@@ -15,6 +15,8 @@ app.secret_key = os.getenv("APP_SECRET")
 CORS(app, supports_credentials=True)
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+main_assistant_id = os.getenv("MAIN_ASSISTANT")
+evaluator_assistant_id = os.getenv("EVALUATOR_ASSISTANT")
 
 
 @app.route("/start", methods=["GET"])
@@ -53,7 +55,7 @@ def chat():
                                         content=user_input_with_instruction)
 
     run_norse = client.beta.threads.runs.create(
-        thread_id=thread_id, assistant_id="asst_IbL863A4MIyVML5IcgtvlRV1")
+        thread_id=thread_id, assistant_id=main_assistant_id)
 
     while True:
         run_status = client.beta.threads.runs.retrieve(thread_id=thread_id,
@@ -82,7 +84,7 @@ def chat():
                                         content=eval_prompt)
 
     run_eval = client.beta.threads.runs.create(
-        thread_id=thread_id, assistant_id="asst_h9x5V2JCvyRRqTND6DApQvW3")
+        thread_id=thread_id, assistant_id=evaluator_assistant_id)
 
     while True:
         run_status = client.beta.threads.runs.retrieve(thread_id=thread_id,
